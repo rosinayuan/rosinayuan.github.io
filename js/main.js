@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectsContainer = document.getElementById('projects');
     if (projectsContainer) {
         projectsContainer.innerHTML = ''; // Clear the placeholder
-        const projects = ['project1.md']; // Manually add project files here
+        const projects = ['project1.md', 'photography.md']; // Manually add project files here
 
         projects.forEach(projectFile => {
             fetch(`projects/${projectFile}`)
